@@ -24,7 +24,11 @@ body {
   text-align: justify;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
   transform: scale(0.98);
-  transition: transform 0.5s;
+  transition: transform 5s;
+}
+
+nav.fixed + .site-wrap {
+  transform: scale(1);
 }
 
 header {
@@ -75,6 +79,10 @@ li.logo {
   transition: all 0.5s;
   font-weight: 600;
   font-size: 30px;
+}
+
+nav.fixed li.logo {
+  max-width: 500px;
 }
 
 li.logo a {

@@ -57,11 +57,13 @@
 <script>
     const nav = document.querySelector('nav')
     const topOfNav = nav.offsetTop
-    console.log(topOfNav)
 
     window.addEventListener('scroll', () => {
         if(window.scrollY >= topOfNav) {
             nav.classList.add('fixed')
+        }
+        else {
+            nav.classList.remove('fixed')
         }
     })
 </script>
